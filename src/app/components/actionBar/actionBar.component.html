@@ -1,0 +1,14 @@
+<ActionBar flat="false" [title]="header.title">
+    <NavigationButton [icon]="leftIcon" (tap)="onLeftIconTap()">
+    </NavigationButton>
+    <!-- <ActionItem horizontalAlignement="left" ios.position="left">
+        <Label (touch)="onTouch($event)" text="&#xf0c9;"></Label>
+    </ActionItem> -->
+    <ActionItem ios.position="right">
+        <StackLayout class="action-layout fas" orientation="horizontal">
+            <Label *ngIf="header.gearIcon" (touch)="onTouch($event)" text="&#xf013;"></Label>
+            <Label *ngIf="header.profileIcon" (touch)="onTouch($event)" text="&#xf007;"></Label>
+            <Label *ngIf="header.logoutIcon" (touch)="onTouch($event)" text="&#xf2f5;"></Label>
+        </StackLayout>
+    </ActionItem>
+</ActionBar>

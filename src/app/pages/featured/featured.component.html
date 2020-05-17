@@ -1,0 +1,12 @@
+<ns-action-bar [headerData]="header"></ns-action-bar>>
+
+<GridLayout rows="*">
+    <StackLayout class="page-main">
+        <Label class="page-main-icon fas" text="&#xf005;"></Label>
+        <Label class="page-main-placeholder" text="Page content goes here"></Label>
+    </StackLayout>
+    <StackLayout class="fab-button" horizontalAlignment="right">
+        <ns-fab [nsFabTap]="onFabTap()"></ns-fab>
+    </StackLayout>
+    <ns-indicator [busy]="isBusy"></ns-indicator>
+</GridLayout>
