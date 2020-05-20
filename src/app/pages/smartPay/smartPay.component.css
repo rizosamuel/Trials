@@ -1,0 +1,48 @@
+.main {
+    height: 70%;
+    width: 40%;
+    border-radius: 100%;
+    background-color: rgb(192, 192, 192);
+}
+
+.title-up {
+    z-index: 20;
+    height: 50;
+    vertical-align: top;
+    text-align: center;
+    font-size: 15;
+    color: white;
+    margin-top: 20;
+    text-transform: uppercase;
+}
+
+.title-down {
+    z-index: 20;
+    height: 50;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 15;
+    color: white;
+    margin-bottom: 20;
+    text-transform: uppercase;
+}
+
+.swipe-holder {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.swipe-wrapper {
+    height: 146;
+    width: 146;
+    border-radius: 73;
+    background-color: teal;
+    vertical-align: middle;
+}
+
+.swipe-lbl {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15;
+}

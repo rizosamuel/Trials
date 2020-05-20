@@ -1,0 +1,19 @@
+.parent {
+    padding: 3;
+    border-radius: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0));
+}
+
+.wrapper {
+    width: 50;
+    height: 50;
+    background-color: teal;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.label {
+    text-align: center;
+    font-size: 20;
+    color: white;
+}

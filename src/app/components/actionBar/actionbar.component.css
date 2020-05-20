@@ -1,0 +1,9 @@
+ActionBar {
+    color: white;
+    background-color: teal;
+}
+
+.action-layout Label {
+    font-size: 30;
+    text-align: center;
+}
