@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Header } from "~/app/models/header.model";
+import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
     selector: "Featured",
@@ -10,7 +11,7 @@ export class FeaturedComponent implements OnInit {
     public header: Header;
     public isBusy: boolean = false
 
-    constructor() {
+    constructor(private nsRouter: RouterExtensions) {
         this.header = new Header()
         this.header.title = "Featured"
     }
@@ -21,5 +22,8 @@ export class FeaturedComponent implements OnInit {
 
     public onFabTap(): void {
         console.log("fab tapped")
+        this.nsRouter.navigate(["smartPay"], {
+            transition: { name: "fade" }
+        });
     }
 }

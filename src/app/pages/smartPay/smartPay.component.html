@@ -1,0 +1,14 @@
+<ns-action-bar [headerData]="header"></ns-action-bar>
+
+<GridLayout rows="*">
+    <GridLayout row="0" rows="*" class="main">
+        <Label row="0" [text]="payTxt" class="title-up"></Label>
+        <StackLayout row="0" class="swipe-holder">
+            <StackLayout (touch)="onTouch($event)" (pan)="onPan($event)" class="swipe-wrapper">
+                <Label #swipeLbl class="swipe-lbl"></Label>
+            </StackLayout>
+        </StackLayout>
+        <Label row="0" [text]="recieveTxt" class="title-down"></Label>
+    </GridLayout>
+    <ns-indicator [busy]="isBusy"></ns-indicator>
+</GridLayout>
